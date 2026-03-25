@@ -1,0 +1,8 @@
+name: "Verify GitHub Action SHA Pinning"
+description: "Scans all workflow files to ensure all GitHub Actions are pinned to a valid SHA that exists on the default branch of the action's repository."
+runs:
+  using: "composite"
+  steps:
+    - name: Verify GitHub Action SHA Pinning
+      run: verify-action-sha.sh
+      shell: bash
